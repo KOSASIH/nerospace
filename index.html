@@ -1,0 +1,49 @@
+---
+layout: redesign
+---
+
+
+    <picture class="megaheader">
+      <source srcset="{{ site.baseurl }}/img/megaheader/picture-a.jpg" media="(min-width: 1000px)">
+      <source srcset="{{ site.baseurl }}/img/megaheader/picture-b.jpg" media="(max-width: 1000px)">
+      <img src="{{ site.baseurl }}/img/megaheader/picture-b.jpg" srcset="{{ site.baseurl }}/img/megaheader/picture-b.jpg 1000w, {{ site.baseurl }}/img/megaheader/picture-a.jpg 2000w" alt="">
+    </picture>
+    <div class="welcome">
+
+      <div class="wrapper">
+
+          <h1 class="welcome__title">Bring Developer</h1>
+          <h2 class="welcome__tagline">Tools to help you integrate services from Bring with your&nbsp;systems.</h2>
+          <ul class="layout welcome__list">
+            <li class="layout__item palm-one-whole lap-and-up-one-third welcome__item">
+              <a href="{{ site.baseurl }}/api/" class="welcome__link">
+                <img src="{{ site.baseurl }}/img/illustration02.svg" alt="">
+                <h2>API documentation</h2>
+                <p class="u-mb0">Developing an e-commerce site? Or&nbsp;software dealing with shipments from Nordic countries? Then you may want to use Bring APIs.</p>
+              </a>
+            </li><!--
+          --><li class="layout__item palm-one-whole lap-and-up-one-third welcome__item">
+              <a href="{{ site.baseurl }}/edi/" class="welcome__link">
+                <img src="{{ site.baseurl }}/img/illustration03.svg" alt="">
+                <h2>EDI documentation</h2>
+                <p class="u-mb0">If you're an EDI vendor, this is where you will find our implementation guides.</p>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="api__warning-box" align="justify">
+        <strong>The Pickup Point API becomes authenticated from 01.11.2020</strong>
+        <br><br>
+        Our customers are increasingly demanding new functionality and solutions that are easy to use. To meet these expectations, we must know which customers and partners are using our APIs and how they are using them.
+
+        To further develop the value proposition of our Pickup Point API, the solution becomes authenticated from 01.11.2020.
+
+        We recommend making the <a href="/api/pickup-point/#steps-for-authentication">adjustment</a> already now, well in advance of summer vacations and peak season.
+        <br><br>
+      </div>
+    {% include apiflock.html %}
+    </div>
+
