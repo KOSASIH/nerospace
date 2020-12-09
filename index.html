@@ -1,0 +1,53 @@
+---
+layout: redesign
+---
+
+
+    <picture class="megaheader">
+      <source srcset="{{ site.baseurl }}/img/megaheader/picture-a.jpg" media="(min-width: 1000px)">
+      <source srcset="{{ site.baseurl }}/img/megaheader/picture-b.jpg" media="(max-width: 1000px)">
+      <img src="{{ site.baseurl }}/img/megaheader/picture-b.jpg" srcset="{{ site.baseurl }}/img/megaheader/picture-b.jpg 1000w, {{ site.baseurl }}/img/megaheader/picture-a.jpg 2000w" alt="">
+    </picture>
+    <div class="welcome">
+
+      <div class="wrapper">
+
+          <h1 class="welcome__title">Bring Developer</h1>
+          <h2 class="welcome__tagline">Tools to help you integrate services from Bring with your&nbsp;systems.</h2>
+          <ul class="layout welcome__list">
+            <li class="layout__item palm-one-whole lap-and-up-one-third welcome__item">
+              <a href="{{ site.baseurl }}/api/" class="welcome__link">
+                <img src="{{ site.baseurl }}/img/illustration02.svg" alt="">
+                <h2>API documentation</h2>
+                <p class="u-mb0">Developing an e-commerce site? Or&nbsp;software dealing with shipments from Nordic countries? Then you may want to use Bring APIs.</p>
+              </a>
+            </li><!--
+          --><li class="layout__item palm-one-whole lap-and-up-one-third welcome__item">
+              <a href="{{ site.baseurl }}/edi/" class="welcome__link">
+                <img src="{{ site.baseurl }}/img/illustration03.svg" alt="">
+                <h2>EDI documentation</h2>
+                <p class="u-mb0">If you're an EDI vendor, this is where you will find our implementation guides.</p>
+              </a>
+            </li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="wrapper">
+      <div class="api__warning-box" align="justify">
+        <strong>Important notice: Mailbox Packet API will be decomissioned on 13.01.2020</strong>
+        <br><br>
+        A simplified and enhanced version of Mailbox Packet (Pakke i postkassen) will be launched on 13.01.2020. From the same date, the Mailbox Packet API will be decomissioned, and the revitalized Mailbox Packet service will be booked via <a href="/api/booking">Booking API</a> like other Bring-services. If you don't already use the <a href="/api/booking">Booking API</a>, we strongly recommend that you start setting up the integration now. 
+        <br><br>
+        <strong>Detailed technical documentation on how to set up Mailbox Packet (Pakke i postkassen) in the Booking API can be found <a href="/api/booking/#mailbox-parcel-pakke-i-postkassen">here</a>.</strong>
+      </div>
+      <div class="api__warning-box" align="justify">
+        <strong>Launching Shipping guide 2.0: </strong>
+        <br><br>
+        We are excited to introduce Shipping Guide API 2.0 - a new and improved version of our Shipping Guide API🎊🎉. The latest version is packed with powerful capabilities and a simplified, structured request and response model, making it easier to provide both you and your end customers with different shipping alternatives.
+        Please refer to <a href="/api/shipping-guide_2/">Shipping Guide API 2.0</a> for more information.
+        <br><br>
+        <strong>NOTE:</strong> The latest version will gradually replace <a href="/api/shipping-guide/#soap">existing versions</a> of the Shipping Guide API, and versions <strong>1</strong>, <strong>2</strong>, <strong>3</strong>, <strong>4</strong>, <strong>5</strong>, <strong>6</strong>, <strong>7</strong>, <strong>9</strong> and <strong>10</strong> have already been phased out. We are of course giving all users enough time to make the switch before phasing out old versions.
+      </div>
+    {% include apiflock.html %}
+    </div>
