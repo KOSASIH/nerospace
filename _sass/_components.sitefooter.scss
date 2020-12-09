@@ -1,0 +1,32 @@
+
+/* -------------------------------------------------------
+*   # .SITEFOOTER
+*
+------------------------------------------------------- */
+
+
+.sitefooter {
+    background-color: $color-background-footer;
+    padding-top: $spacing *2;
+    color: #fff;
+    min-height: 200px;
+    width: 100%;
+    a {
+        color: #fff;
+    }
+    a:hover {
+        color: #ccc;
+    }
+}
+
+.sitefooter-links {
+    list-style-type: none;
+    li {
+        margin-right: 2em;
+        margin-bottom: 2em;
+    }
+}
+
+.sitefooter-nav {
+    font-weight: bold;
+}
